@@ -1,0 +1,733 @@
+
+body {
+		background: #1c1c1c;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+		font-weight: 300;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6,
+.navbar-default, .btn {
+  font-family: 'Calibri', cursive;
+  font-weight: 400;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 52px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+h2 {
+  color: #f0f0f0;
+  font-size: 32px;
+}
+
+h3 {
+  color: #535bd4;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom: 4px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+p {
+    color: #999;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+hr {
+  border-bottom-color: #999;
+  width: 100px;
+}
+
+.section-btn {
+  background-color: #000;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 14px 36px;
+  margin-top: 26px;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-btn:hover {
+  background: transparent;
+  border-top-color: #222;
+  border-right-color: #222;
+  border-bottom-color: #222;
+  border-left-color: #222;
+  color: #ffffff;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #535bd4;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+a:hover, a:active, a:focus {
+  color: #3FF;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 62px;
+  text-align: center;
+}
+
+#about,
+#tentang,
+#toys,
+#Dukungan {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#BagianBawah {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#tentang,
+#toys {
+  text-align: center;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-pulse {
+  width: 60px;
+  height: 60px;
+  background-color: #1dc9e3;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+
+
+
+
+
+
+/*---------------------------------------
+    Navigation section              
+-----------------------------------------*/
+
+.navbar-default {
+    /* background: #ffffff; */
+    background: #ffbf69;
+    border: none;
+    box-shadow: none;
+    margin: 0 !important;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.navbar-default .navbar-brand span {
+  color: #102a7d;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #656565;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar-default .navbar-nav > li a:hover {
+    color: #1dc9e3;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+     border: none;
+     padding-top: 10px;
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+    border-color: transparent;
+  }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+
+#home {
+    background: #535bd4 url('../images/background.png') no-repeat;
+    /* background: #1ed636; */
+    background-size: cover;
+    /* background-position: center center; */
+    background-position: center;
+    color: #ffffff;
+    /* color: #770a0a; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    height: 140vh;
+    position: relative;
+}
+
+#home .overlay {
+  background: #4776E6; 
+  background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); 
+  background: linear-gradient(to left, #4776E6 , #8E54E9); 
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#home img {
+  width: 100%;
+  height: auto;
+}
+
+#home .home-thumb {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+#home p,
+#Dukungan p {
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+#home .section-btn {
+  /* background: #1dc9e3; */
+  background: #CBF3F0;
+}
+
+#home .section-btn:hover {
+  background: transparent !important;
+}
+
+
+
+
+
+
+/*---------------------------------------
+   tentang section              
+-----------------------------------------*/
+
+#tentang {
+  /* background-color: #1dc9e3; */
+  background-color: #fff;
+}
+
+#tentang p {
+  color: #666;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+
+
+
+
+
+/*---------------------------------------
+   About section              
+-----------------------------------------*/
+
+#about img {
+  width: 100%;
+}
+
+#about .about-thumb {
+  margin-bottom: 32px;
+  position: relative;
+  text-align: center;
+}
+
+#about .about-overlay h3 {
+  padding-bottom: 0px;
+}
+
+#about .about-overlay {
+  background-color: rgba(250,250,250,0.9);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 450ms;
+}
+
+#about .about-thumb:hover .about-overlay {
+  height: 100%;
+  background-color: #ffffff;
+  color: #222;
+  padding-top: 30%;
+  opacity: 0.9;
+}
+
+#about .about-thumb:hover h4 {
+  color: #1dc9e3;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    BagianBawah section              
+-----------------------------------------*/
+
+#BagianBawah .col-md-3 {
+  display: block;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+/*---------------------------------------
+   toys section         
+-----------------------------------------*/
+
+#toys {
+  background: #CBF3F0;
+}
+
+#toys .toys-plan {
+  background-color: #CBF3F0;
+  border-radius: 2px;
+  margin-bottom: 60px;
+}
+
+#toys .toys-plan .toys-month {
+  padding: 14px 10px 6px 10px;
+}
+
+#toys .toys-plan .toys-month h2 {
+  font-size: 52px;
+  color: #1dc9e3;
+}
+
+#toys .toys-plan .section-btn {
+  background: #1dc9e3;
+  position: relative;
+  top: 20px;
+}
+
+#toys .toys-plan .section-btn:hover {
+  background-color: #ffffff;
+  color: #222;
+}
+
+
+
+
+
+
+/*---------------------------------------
+    Dukungan section              
+-----------------------------------------*/
+
+#Dukungan {
+    background: #535bd4 url('../images/bg-grid.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #000;
+    position: relative;
+}
+
+#Dukungan .overlay {
+  /* background: #1dc9e3; */
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#Dukungan .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  border-radius: 0px;
+  box-shadow: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  height: 50px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*---------------------------------------
+   Back top         
+-----------------------------------------*/
+
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  border-radius: 100px;
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 22px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.go-top:hover {
+    background: #535bd4;
+    color: #ffffff;
+}
+
+
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+@media (max-width: 1200px) {
+  .container {
+	width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+
+  h1 {
+    font-size: 38px;
+  }
+  
+  .section-btn {
+    padding: 10px 34px 12px;
+  }
+
+  #home, #home .overlay {
+    height: 60vh;
+  }
+
+  #home .home-thumb {
+    padding-top: 0px;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about .about-thumb {
+    margin-top: 62px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .section-title {
+    padding-bottom: 32px;
+  }
+
+  #about, #tentang,
+  #toys, #Dukungan {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #BagianBawah {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+   body {
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .navbar-default {
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .navbar-default .navbar-brand {
+    line-height: 20px;
+  }
+
+  .navbar-default .navbar-nav li a {
+    line-height: 25px;
+  }
+
+  #home, #home .overlay {
+    height: 100vh;
+  }
+
+  #home img {
+    position: relative;
+    display: inline-block;
+  }
+
+  #home .home-thumb {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+
+  #toys .toys-plan {
+    margin-bottom: 62px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+}
+
+.gambar_mainan {
+  width: auto ; 
+  height: 350px; 
+  align-self: center; 
+  /* background-color: #ffbf69; */
+  background-image: url('../images/square.png');
+  /* background: url('../images/square.png') no-repeat; */
+  background-size: cover;
+}
+
+.gambar_mainan2 {
+  width: auto ; 
+  height: 350px; 
+  align-self: center; 
+  /* background-color: #ffbf69; */
+  background-image: url('../images/amongus.png');
+  /* background: url('../images/square.png') no-repeat; */
+  background-size: cover;
+}
+
+.gambar_mainan3 {
+  width: auto ; 
+  height: 350px; 
+  align-self: center; 
+  /* background-color: #ffbf69; */
+  background-image: url('../images/round.png');
+  /* background: url('../images/square.png') no-repeat; */
+  background-size: cover;
+}
+
+/* .clearfix {
+  width: auto;
+  height: 500px;
+  background-color: #000;
+} */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
